@@ -222,15 +222,14 @@ nav a.active {
     z-index: 0;
 }
 
-.profile-placeholder {
+.hero-img {
     width: 100%;
     height: 100%;
-    /* Ideally an image */
+    object-fit: cover;
     border: 2px solid var(--secondary-text);
-    display: flex;
-    justify-content: center;
-    align-items: center;
     z-index: 1;
+    position: relative;
+    /* Grayscale to match theme? User didn't ask, but it fits "Anandu" style. Leaving as color for now. */
 }
 
 .current-status {
@@ -657,7 +656,7 @@ footer {
     /* Prevent descender clipping */
     display: block;
 }
-}
+
 
 .award-card h3 {
     font-size: 18px;
